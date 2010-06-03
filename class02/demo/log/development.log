@@ -1,0 +1,74 @@
+
+
+Processing SayController#index (for 127.0.0.1 at 2010-06-03 01:39:09) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: hello):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 01:39:11) [GET]
+
+ActionController::RoutingError (No route matches "/hello" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SayController#index (for 127.0.0.1 at 2010-06-03 01:39:13) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: hello):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:39:22) [GET]
+Rendering say/hello
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:45:08) [GET]
+Rendering say/hello
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-06-03 01:45:08) [GET]
+Rendering say/goodbye
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:45:09) [GET]
+Rendering say/hello
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-06-03 01:45:10) [GET]
+Rendering say/goodbye
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:45:18) [GET]
+Rendering say/hello
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-06-03 01:45:21) [GET]
+Rendering say/goodbye
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:45:22) [GET]
+Rendering say/hello
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
+
+
+Processing SayController#goodbye (for 127.0.0.1 at 2010-06-03 01:45:23) [GET]
+Rendering say/goodbye
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/goodbye]
+
+
+Processing SayController#hello (for 127.0.0.1 at 2010-06-03 01:45:24) [GET]
+Rendering say/hello
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/say/hello]
