@@ -17,7 +17,7 @@ postfix.each do |element|
   # If the element is an operator...
   if element =~ /\+|\-|\*|\//
     
-    # ... then the previous two elements on the stack are operators.
+    # ... then the previous two elements on the stack are operands.
     operand2, operand1 = stack.pop, stack.pop
     
     # If the operator is either * or /, we should apply parenthesis
