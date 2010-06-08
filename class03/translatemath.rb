@@ -20,9 +20,9 @@ postfix.each do |element|
     # ... then the previous two elements on the stack are operands.
     operand2, operand1 = stack.pop, stack.pop
     
-    # If the operator is either * or /, we should apply parenthesis
+    # If the operator is either *, / or -, we should apply parenthesis
     # to any compound operands
-    if element =~ /\*|\//
+    if element =~ /\*|\/|\-/
       operand1 = "(#{operand1})" if operand1 =~ /\+|\-/
       operand2 = "(#{operand2})" if operand2 =~ /\+|\-/
     end
