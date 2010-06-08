@@ -769,3 +769,426 @@ ActionController::UnknownAction (No action responded to add_to_cart. Actions: in
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100604183742)
+Migrating to AddPriceToProduct (20100604184320)
+Migrating to AddTestData (20100604192133)
+Migrating to CreateSessions (20100608013850)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100608013850')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:50:33) [GET]
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `add_to_cart' for #<ActionView::Base:0x1043b6618>) on line #12 of app/views/store/index.html.erb:
+9:     <%= product.description %>
+10:     <div class="price-line">
+11:       <span class="price"><%= number_to_currency(product.price) %></span>
+12:       <%= button_to "Add to Cart", :action => add_to_cart, :id => product %>
+13:     </div>
+14:   </div>
+15: <% end %>
+
+    app/views/store/index.html.erb:12
+    app/views/store/index.html.erb:5:in `each'
+    app/views/store/index.html.erb:5
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:51:02) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+
+ActionView::TemplateError (undefined local variable or method `add_to_cart' for #<ActionView::Base:0x1044b5780>) on line #12 of app/views/store/index.html.erb:
+9:     <%= product.description %>
+10:     <div class="price-line">
+11:       <span class="price"><%= number_to_currency(product.price) %></span>
+12:       <%= button_to "Add to Cart", :action => add_to_cart, :id => product %>
+13:     </div>
+14:   </div>
+15: <% end %>
+
+    app/views/store/index.html.erb:12
+    app/views/store/index.html.erb:5:in `each'
+    app/views/store/index.html.erb:5
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:52:48) [GET]
+  [4;36;1mProduct Load (0.9ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:52:50) [POST]
+  Parameters: {"authenticity_token"=>"HJinMHWiEZF30J73ve/vlgnOv67gIrACttaRlFrEdTg=", "id"=>"2"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 118ms (View: 95, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:52:53) [POST]
+  Parameters: {"authenticity_token"=>"HJinMHWiEZF30J73ve/vlgnOv67gIrACttaRlFrEdTg=", "id"=>"4"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/4]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:52:55) [POST]
+  Parameters: {"authenticity_token"=>"HJinMHWiEZF30J73ve/vlgnOv67gIrACttaRlFrEdTg=", "id"=>"3"}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:52:57) [POST]
+  Parameters: {"authenticity_token"=>"HJinMHWiEZF30J73ve/vlgnOv67gIrACttaRlFrEdTg=", "id"=>"3"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/3]
+  [4;36;1mSQL (4.6ms)[0m   [0;1mDELETE FROM sessions[0m
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:56:23) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:56:25) [POST]
+  Parameters: {"authenticity_token"=>"cQDZ3GQV5QMCMCYwea6kYhtclryR8naGCGFDOclbh7M=", "id"=>"2"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+NameError (uninitialized constant Cart::CartItem):
+  app/models/cart.rb:14:in `add_product'
+  app/controllers/store_controller.rb:12:in `add_to_cart'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.2ms)[0m   [0;1mDELETE FROM sessions[0m
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:58:06) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:58:07) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 21:58:09) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 21:58:11) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+NameError (uninitialized constant Cart::CartItem):
+  app/models/cart.rb:14:in `add_product'
+  app/controllers/store_controller.rb:12:in `add_to_cart'
+
+Rendered rescues/_trace (92.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:11:14) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:11:36) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;36;1mProduct Load (0.2ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+NameError (uninitialized constant Cart::CartItem):
+  app/models/cart.rb:14:in `add_product'
+  app/controllers/store_controller.rb:12:in `add_to_cart'
+
+Rendered rescues/_trace (30.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:11:52) [GET]
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:11:53) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+NameError (uninitialized constant Cart::CartItem):
+  app/models/cart.rb:14:in `add_product'
+  app/controllers/store_controller.rb:12:in `add_to_cart'
+
+Rendered rescues/_trace (34.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:12:41) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:12:42) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:12:44) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:12:46) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"4"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/4]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:20:21) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:20:23) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:22:31) [GET]
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/store/]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:22:32) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-06-07 22:22:33) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:22:33) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:22:35) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"4"}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 71ms (View: 3, DB: 1) | 200 OK [http://localhost/store/add_to_cart/4]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:22:37) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-06-07 22:22:38) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og="}
+Redirected to http://localhost:3000/store
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/store/empty_cart]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:22:38) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-07 22:24:18) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:24:19) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"2"}
+  [4;35;1mProduct Load (0.2ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://localhost/store/add_to_cart/2]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-06-07 22:24:23) [POST]
+  Parameters: {"authenticity_token"=>"VTaJyRdTNRXQ/a0WtO9/UQgqXmaQpsPLwefsBedZ0og=", "id"=>"4"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering template within layouts/store
+Rendering store/add_to_cart
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://localhost/store/add_to_cart/4]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 01:53:28) [GET]
+
+ActionController::RoutingError (No route matches "/tasks" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 01:53:36) [GET]
+
+ActionController::RoutingError (No route matches "/tasks/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 01:53:40) [GET]
+
+ActionController::RoutingError (No route matches "/tasks/add" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 01:53:44) [GET]
+
+ActionController::RoutingError (No route matches "/tasks" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-08 01:53:47) [GET]
+  [4;35;1mProduct Load (0.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/store]
+DEPRECATION WARNING: Giving :session_key to SessionStore is deprecated, please use :key instead. (called from new at /Library/Ruby/Gems/1.8/gems/actionpack-2.3.8/lib/action_controller/middleware_stack.rb:72)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-06-08 01:53:48) [GET]
+  [4;36;1mProduct Load (0.8ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/store]

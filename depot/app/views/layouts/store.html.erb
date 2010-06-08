@@ -16,10 +16,11 @@
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br />
-      <p id="date"><%= @date %></p>
-      <p id="time"><%= @time %></p>
     </div>
     <div id="main">
+      <% if flash[:notice] -%>
+        <div id="notice"><%= flash[:notice] %></div>
+      <% end -%>
       <%= yield :layout %>
     </div>
   </div>
