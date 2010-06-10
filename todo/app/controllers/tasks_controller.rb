@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.xml
   def index
-    @tasks = Task.all
+    @tasks = Task.all(:order => "priority DESC")
     
     @inbox = @tasks.reject { |task| task.completed }
     
@@ -78,6 +78,30 @@ class TasksController < ApplicationController
   def destroy
     @task = Task.find(params[:id])
     @task.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(tasks_url) }
+      format.xml  { head :ok }
+    end
+  end
+  
+  
+  def complete
+    @task = Task.find(params[:id])
+    @task.update_attributes(:completed => true)
+
+    respond_to do |format|
+      format.html { redirect_to(tasks_url) }
+      format.xml  { head :ok }
+    end
+  end
+  
+  def clear_completed
+    @tasks = Task.find(:all, :conditions => { :completed => true })
+    
+    @task.each do |task|
+      task.destroy
+    end
 
     respond_to do |format|
       format.html { redirect_to(tasks_url) }

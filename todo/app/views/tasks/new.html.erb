@@ -4,19 +4,23 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :notes %><br />
+    <%= f.label :notes %>
     <%= f.text_area :notes %>
   </p>
   <p>
-    <%= f.label :priority %><br />
-    <%= f.text_field :priority %>
+    <%= f.label :priority %>
+    <%= f.select :priority, [4, 3, 2, 1] %>
   </p>
   <p>
-    <%= f.label :completed %><br />
+    <%= f.label :due_date %>
+    <%= f.date_select :due_date, :order => [:month, :day, :year] %>
+  </p>
+  <p>
+    <%= f.label :completed %>
     <%= f.check_box :completed %>
   </p>
   <p>

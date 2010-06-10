@@ -726,3 +726,2146 @@ Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:16:20) [GET]
 Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:03:03) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 108ms (View: 100, DB: 1) | 200 OK [http://localhost/tasks]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100608054703)
+Migrating to AddDueDateToTask (20100610030512)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "tasks" ADD "due_date" date[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100610030512')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:06:07) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:06:38) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:11:51) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:13:45) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 38ms (View: 31, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:13:58) [GET]
+  [4;35;1mTask Load (0.9ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:14:18) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:14:45) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:15:15) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:15:32) [GET]
+  [4;35;1mTask Load (1.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:16:11) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:16:48) [GET]
+  [4;35;1mTask Load (1.1ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:07) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:13) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:17) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:24) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 76ms (View: 70, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:35) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:43) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:47) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:17:57) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:18:04) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:18:17) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:18:25) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:18:35) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:18:44) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:19:12) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:19:13) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:19:21) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:19:48) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 96ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:19:54) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:20:00) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:20:16) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:20:39) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:20:57) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:07) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 77ms (View: 71, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:08) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:15) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:19) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:37) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:37) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:49) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:21:57) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:22:15) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:22:46) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:23:07) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:24:26) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:24:42) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 86ms (View: 78, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:24:59) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:02) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:11) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:17) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 26ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:21) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:25) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:25:29) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:25:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 131ms (View: 126, DB: 0) | 200 OK [http://localhost/tasks/2/edit]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:26:01) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:26:34) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:26:45) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:26:59) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:27:07) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:27:12) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:27:17) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:27:26) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:27:58) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:28:14) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:28:29) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 75ms (View: 69, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:28:38) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:29:16) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:29:29) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:29:51) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:20) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:28) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:50) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:50) [GET]
+  [4;35;1mTask Load (0.9ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:55) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 35ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:30:56) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:08) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:19) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:26) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 77ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:29) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:36) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:31:45) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:32:24) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:32:36) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:33:08) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 75ms (View: 69, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:33:18) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:33:36) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:34:32) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:34:38) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:34:46) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:35:23) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:35:43) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:35:56) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:36:02) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:36:08) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:37:06) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 32ms (View: 26, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:37:23) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:37:43) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:38:56) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:39:43) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:39:52) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:39:57) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:40:03) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:40:46) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:40:51) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:40:55) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:41:07) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:41:25) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:41:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 77ms (View: 72, DB: 0) | 200 OK [http://localhost/tasks/3/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:41:57) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1VEFZ+dI/UBtuGK5xE6JeQztdSpFZ6VCEb6vJXQYTNc=", "id"=>"3", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"Borrow vacuum from Dave", "priority"=>"3"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+  [4;36;1mTask Update (0.7ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:41:57', "notes" = 'Borrow vacuum from Dave' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/tasks/3
+Completed in 73ms (DB: 1) | 302 Found [http://localhost/tasks/3]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:41:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks/3]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:41:59) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:42:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/3/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:42:13) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1VEFZ+dI/UBtuGK5xE6JeQztdSpFZ6VCEb6vJXQYTNc=", "id"=>"3", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"Borrow vacuum from Dave\r\n\r\nasdf", "priority"=>"3"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+  [4;35;1mTask Update (37.6ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:42:13', "notes" = 'Borrow vacuum from Dave
+
+asdf' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/tasks/3
+Completed in 141ms (DB: 38) | 302 Found [http://localhost/tasks/3]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:42:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/3]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:42:14) [GET]
+  [4;35;1mTask Load (1.0ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:42:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/3/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:42:21) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"1VEFZ+dI/UBtuGK5xE6JeQztdSpFZ6VCEb6vJXQYTNc=", "id"=>"3", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"Borrow vacuum from Dave", "priority"=>"3"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+  [4;36;1mTask Update (0.6ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:42:21', "notes" = 'Borrow vacuum from Dave' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/tasks/3
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/tasks/3]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:42:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/3]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:42:22) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:42:48) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:43:00) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:43:10) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:43:53) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 79ms (View: 72, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:44:03) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:45:29) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2010-06-09 23:45:31) [DELETE]
+  Parameters: {"authenticity_token"=>"1VEFZ+dI/UBtuGK5xE6JeQztdSpFZ6VCEb6vJXQYTNc=", "id"=>"4"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 4) [0m
+  [4;36;1mTask Destroy (0.2ms)[0m   [0;1mDELETE FROM "tasks" WHERE "id" = 4[0m
+Redirected to http://localhost:3000/tasks
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:45:31) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-09 23:45:33) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-09 23:46:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"1VEFZ+dI/UBtuGK5xE6JeQztdSpFZ6VCEb6vJXQYTNc=", "task"=>{"name"=>"Buy a new iPhone", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;36;1mTask Create (0.6ms)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority", "due_date") VALUES('Buy a new iPhone', '2010-06-10 03:46:19', 'f', '', '2010-06-10 03:46:19', 4, NULL)[0m
+Redirected to http://localhost:3000/tasks/6
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:47:20) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 122ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:47:24) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 194ms (View: 188, DB: 1) | 200 OK [http://localhost/tasks/6/edit]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:48:06) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:48:27) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:48:50) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:49:01) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 86ms (View: 79, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:50:12) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#destroy (for 127.0.0.1 at 2010-06-09 23:50:16) [DELETE]
+  Parameters: {"authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"3"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+  [4;35;1mTask Destroy (0.2ms)[0m   [0mDELETE FROM "tasks" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/tasks
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/tasks/3]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:50:16) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:50:51) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:50:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:50:56) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:50:56', "completed" = 'f' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:50:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 73ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:50:58) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#6 (for 127.0.0.1 at 2010-06-09 23:51:01) [POST]
+  Parameters: {"authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU="}
+
+ActionController::UnknownAction (No action responded to 6. Actions: complete, create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:53:59) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#6 (for 127.0.0.1 at 2010-06-09 23:54:01) [POST]
+  Parameters: {"authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU="}
+
+ActionController::UnknownAction (No action responded to 6. Actions: complete, create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#2 (for 127.0.0.1 at 2010-06-09 23:54:13) [POST]
+  Parameters: {"authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: complete, create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:54:55) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 82ms (View: 76, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#2 (for 127.0.0.1 at 2010-06-09 23:54:57) [POST]
+  Parameters: {"authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: complete, create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:56:35) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `complete_task_path' for #<ActionView::Base:0x1043c06b8>) on line #8 of app/views/tasks/index.html.erb:
+5:   <li class="priority_<%= task.priority %>">
+6:     <ul class="task-tools">
+7:       <li><%= link_to '&#9998;', edit_task_path(task) %></li>
+8:       <li><%= link_to '&#10003;', complete_task_path(task) %></li>
+9:       <li><%= link_to '&#10005;', task, :confirm => 'Are you sure?', :method => :delete %></li>
+10:     </ul>
+11:     <span class="data">
+
+    app/views/tasks/index.html.erb:8
+    app/views/tasks/index.html.erb:4:in `each'
+    app/views/tasks/index.html.erb:4
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:57:37) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 88ms (View: 81, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#complete (for 127.0.0.1 at 2010-06-09 23:57:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:57:38', "completed" = 't' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/tasks
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/tasks/complete/2]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:57:38) [GET]
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#complete (for 127.0.0.1 at 2010-06-09 23:57:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:57:43', "completed" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/tasks/complete/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:57:43) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:57:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:57:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:57:46', "completed" = 'f' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:57:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:57:47) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-09 23:57:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/2/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-09 23:57:51) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"2", "task"=>{"name"=>"Buy groceries", "completed"=>"0", "notes"=>"Milk, cereal, pencils", "priority"=>"2"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 03:57:51', "completed" = 'f' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/tasks/2
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/tasks/2]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-09 23:57:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/2]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:57:52) [GET]
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-09 23:58:01) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-09 23:58:44) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-09 23:58:46) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 82ms (View: 78, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-09 23:59:57) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-10 00:00:26) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-10 00:00:34) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:02:22) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 29ms (View: 21, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:02:23) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:05:20) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:05:21) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:05:47) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:06:01) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:06:26) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:07:00) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:07:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 74ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/6/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-10 00:07:09) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"6", "task"=>{"name"=>"Buy a new iPhone", "completed"=>"0", "notes"=>"", "priority"=>"3"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:07:09', "priority" = 3 WHERE "id" = 6[0m
+Redirected to http://localhost:3000/tasks/6
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/tasks/6]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:07:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/6]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:07:11) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:08:08) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:08:38) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:08:47) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:00) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:11) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:19) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:24) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:33) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:54) [GET]
+  [4;35;1mTask Load (1.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:09:55) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:10:08) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:10:29) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:10:45) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:10:54) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 32ms (View: 24, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:11:18) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:11:37) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:11:46) [GET]
+  [4;35;1mTask Load (1.0ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:11:51) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:11:56) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:02) [GET]
+  [4;36;1mTask Load (1.1ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:03) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:03) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 74ms (View: 68, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:03) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:21) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:12:34) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:14:32) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:15:50) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:15:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 82ms (View: 77, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-10 00:15:58) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "due_date(1i)"=>"2010", "priority"=>"4", "due_date(2i)"=>"6", "due_date(3i)"=>"10"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:15:58', "due_date" = '2010-06-10' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:15:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:16:00) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:16:35) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:16:54) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:17:05) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:17:13) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 77ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:17:31) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:17:46) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:17:59) [GET]
+  [4;35;1mTask Load (0.9ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:18:11) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:18:33) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:18:40) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#complete (for 127.0.0.1 at 2010-06-10 00:18:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:18:45', "completed" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/tasks/complete/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:18:45) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:18:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-10 00:18:56) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "due_date(1i)"=>"2010", "priority"=>"4", "due_date(2i)"=>"6", "due_date(3i)"=>"10"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:18:56', "completed" = 'f' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:18:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:18:57) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:20:57) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:20:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 75ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:22:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:22:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:23:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-10 00:23:16) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "due_date(1i)"=>"2010", "priority"=>"2", "due_date(2i)"=>"6", "due_date(3i)"=>"10"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:23:16', "priority" = 2 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:23:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:23:17) [GET]
+  [4;35;1mTask Load (1.1ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 87ms (View: 79, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:24:03) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined local variable or method `clear_completed' for #<ActionView::Base:0x104493478>) on line #39 of app/views/tasks/index.html.erb:
+36: 
+37: <%= link_to '+ New Task', new_task_path %>
+38: 
+39: <%= link_to '- Clear Completed', :action => clear_completed %>
+
+    app/views/tasks/index.html.erb:39
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:24:19) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined local variable or method `clear_completed' for #<ActionView::Base:0x104149e70>) on line #39 of app/views/tasks/index.html.erb:
+36: 
+37: <%= link_to '+ New Task', new_task_path %>
+38: 
+39: <%= link_to '- Clear Completed', :action => clear_completed %>
+
+    app/views/tasks/index.html.erb:39
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (46.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:24:55) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:25:21) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:25:54) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (99.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:27:50) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:27:51) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:28:05) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:28:06) [GET]
+  Parameters: {"id"=>"clearcompleted"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clearcompleted):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:29:16) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:29:17) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (106.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:30:44) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:30:45) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:33:47) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:33:49) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (98.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:35:31) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 45ms (View: 37, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:35:33) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:36:11) [GET]
+  [4;36;1mTask Load (1.0ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 77ms (View: 70, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:36:25) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:36:35) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:36:45) [GET]
+  [4;35;1mTask Load (1.1ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:36:54) [GET]
+  [4;36;1mTask Load (1.0ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:37:01) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:37:15) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:37:20) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:37:46) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:37:55) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:38:01) [GET]
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:38:11) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:38:38) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-10 00:38:40) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 80ms (View: 75, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:38:50) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:39:31) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:39:32) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:39:43) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:40:18) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:40:30) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-10 00:40:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks/5/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-10 00:40:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "id"=>"5", "task"=>{"name"=>"Complete a task", "completed"=>"1", "notes"=>"", "due_date(1i)"=>"2010", "priority"=>"4", "due_date(2i)"=>"6", "due_date(3i)"=>"10"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:40:46', "name" = 'Complete a task', "due_date" = '2010-06-10' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/tasks/5
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/tasks/5]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:40:46) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:40:47) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-10 00:41:30) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-10 00:41:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0J12r+/7KuNyBRsqQWd3dDmEAvoY1w8iDbH44vt4KFU=", "task"=>{"name"=>"Eat breakfast", "completed"=>"0", "notes"=>"Eggs, bacon", "due_date(1i)"=>"2010", "priority"=>"2", "due_date(2i)"=>"6", "due_date(3i)"=>"11"}}
+  [4;36;1mTask Create (0.4ms)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority", "due_date") VALUES('Eat breakfast', '2010-06-10 04:41:51', 'f', 'Eggs, bacon', '2010-06-10 04:41:51', 2, '2010-06-11')[0m
+Redirected to http://localhost:3000/tasks/7
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:41:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 7) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/7]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:41:52) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#complete (for 127.0.0.1 at 2010-06-10 00:42:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-10 04:42:29', "completed" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/tasks/complete/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-10 00:42:29) [GET]
+  [4;35;1mTask Load (0.9ms)[0m   [0mSELECT * FROM "tasks" ORDER BY priority DESC[0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-10 00:42:44) [GET]
+  Parameters: {"id"=>"clear_completed"}
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=clear_completed):
+  app/controllers/tasks_controller.rb:20:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
