@@ -1,0 +1,728 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20100608054703)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "notes" text, "priority" integer, "completed" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100608054703')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 01:54:28) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 01:56:09) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+NoMethodError (undefined method `filter' for []:Array):
+  app/controllers/tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 01:58:07) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:00:22) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:8:in `-'
+  app/controllers/tasks_controller.rb:8:in `index'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:00:54) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:8:in `-'
+  app/controllers/tasks_controller.rb:8:in `index'
+
+Rendered rescues/_trace (30.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:42) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (101.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:42) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:47) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:47) [GET]
+  [4;36;1mTask Load (1.0ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:47) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:01:47) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (97.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:10) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:9:in `-'
+  app/controllers/tasks_controller.rb:9:in `index'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:10) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:9:in `-'
+  app/controllers/tasks_controller.rb:9:in `index'
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:26) [GET]
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:27) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+
+TypeError (can't convert nil into Array):
+  app/controllers/tasks_controller.rb:10:in `-'
+  app/controllers/tasks_controller.rb:10:in `index'
+
+Rendered rescues/_trace (29.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:47) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:02:48) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:03:17) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:03:22) [GET]
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:03:24) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:03:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Finish JBS Homework", "completed"=>"0", "notes"=>"", "priority"=>"5"}}
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:03:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Finish JBS Homework", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority") VALUES('Finish JBS Homework', '2010-06-08 06:03:44', 'f', '', '2010-06-08 06:03:44', 4)[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:03:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:03:47) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `date_modified' for #<Task:0x10414a488>) on line #37 of app/views/tasks/index.html.erb:
+34:   <tr>
+35:     <td><%=h task.name %></td>
+36:     <td><%=h task.notes %></td>
+37:     <td><%=h task.date_modified %></td>
+38:     <td><%= link_to 'Show', task %></td>
+39:     <td><%= link_to 'Edit', edit_task_path(task) %></td>
+40:     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/tasks/index.html.erb:37
+    app/views/tasks/index.html.erb:33:in `each'
+    app/views/tasks/index.html.erb:33
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:04:23) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:04:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:04:30) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"1", "task"=>{"name"=>"Finish JBS Homework", "completed"=>"1", "notes"=>"", "priority"=>"4"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-08 06:04:30', "completed" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:04:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 76ms (View: 71, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:04:32) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `date_modified' for #<Task:0x104485350>) on line #37 of app/views/tasks/index.html.erb:
+34:   <tr>
+35:     <td><%=h task.name %></td>
+36:     <td><%=h task.notes %></td>
+37:     <td><%=h task.date_modified %></td>
+38:     <td><%= link_to 'Show', task %></td>
+39:     <td><%= link_to 'Edit', edit_task_path(task) %></td>
+40:     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/tasks/index.html.erb:37
+    app/views/tasks/index.html.erb:33:in `each'
+    app/views/tasks/index.html.erb:33
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:05:06) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `task_created' for #<Task:0x10419bc48>) on line #37 of app/views/tasks/index.html.erb:
+34:   <tr>
+35:     <td><%=h task.name %></td>
+36:     <td><%=h task.notes %></td>
+37:     <td><%=h task.task_created %></td>
+38:     <td><%= link_to 'Show', task %></td>
+39:     <td><%= link_to 'Edit', edit_task_path(task) %></td>
+40:     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/tasks/index.html.erb:37
+    app/views/tasks/index.html.erb:33:in `each'
+    app/views/tasks/index.html.erb:33
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (121.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:05:31) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `task_modified' for #<Task:0x10431c978>) on line #37 of app/views/tasks/index.html.erb:
+34:   <tr>
+35:     <td><%=h task.name %></td>
+36:     <td><%=h task.notes %></td>
+37:     <td><%=h task.task_modified %></td>
+38:     <td><%= link_to 'Show', task %></td>
+39:     <td><%= link_to 'Edit', edit_task_path(task) %></td>
+40:     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/tasks/index.html.erb:37
+    app/views/tasks/index.html.erb:33:in `each'
+    app/views/tasks/index.html.erb:33
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (108.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:05:36) [GET]
+  [4;36;1mTask Load (0.4ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+
+ActionView::TemplateError (undefined method `modified' for #<Task:0x104484978>) on line #37 of app/views/tasks/index.html.erb:
+34:   <tr>
+35:     <td><%=h task.name %></td>
+36:     <td><%=h task.notes %></td>
+37:     <td><%=h task.modified %></td>
+38:     <td><%= link_to 'Show', task %></td>
+39:     <td><%= link_to 'Edit', edit_task_path(task) %></td>
+40:     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/tasks/index.html.erb:37
+    app/views/tasks/index.html.erb:33:in `each'
+    app/views/tasks/index.html.erb:33
+    app/controllers/tasks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:05:50) [GET]
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 32ms (View: 26, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:06:16) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 81ms (View: 74, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:06:40) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:06:53) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:06:58) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:07:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Buy groceries", "completed"=>"0", "notes"=>"Milk, cereal, pencils", "priority"=>"2"}}
+  [4;35;1mTask Create (0.3ms)[0m   [0mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority") VALUES('Buy groceries', '2010-06-08 06:07:16', 'f', 'Milk, cereal, pencils', '2010-06-08 06:07:16', 2)[0m
+Redirected to http://localhost:3000/tasks/2
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:07:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/2]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:07:18) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:10:52) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:10:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:10:58) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"1", "task"=>{"name"=>"Finish JBS Homework", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-08 06:10:58', "completed" = 'f' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:10:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:11:01) [GET]
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:11:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:11:27) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-08 06:11:27', "name" = 'Demonstrate to-do list app' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:11:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:11:28) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:11:33) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:11:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"", "priority"=>""}}
+
+NoMethodError (undefined method `>' for nil:NilClass):
+  app/models/task.rb:11:in `priority_must_be_within_range'
+  app/controllers/tasks_controller.rb:50:in `create'
+  app/controllers/tasks_controller.rb:49:in `create'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:12:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"", "priority"=>""}}
+
+NoMethodError (undefined method `>' for nil:NilClass):
+  app/models/task.rb:11:in `priority_must_be_within_range'
+  app/controllers/tasks_controller.rb:50:in `create'
+  app/controllers/tasks_controller.rb:49:in `create'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:13:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Clean room", "completed"=>"0", "notes"=>"", "priority"=>"3"}}
+  [4;36;1mTask Create (0.4ms)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority") VALUES('Clean room', '2010-06-08 06:13:52', 'f', '', '2010-06-08 06:13:52', 3)[0m
+Redirected to http://localhost:3000/tasks/3
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:13:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/3]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:13:54) [GET]
+  [4;36;1mTask Load (1.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:13:59) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:14:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Thank Pito for lunch", "completed"=>"0", "notes"=>"", "priority"=>"1"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority") VALUES('Thank Pito for lunch', '2010-06-08 06:14:12', 'f', '', '2010-06-08 06:14:12', 1)[0m
+Redirected to http://localhost:3000/tasks/4
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:14:12) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/4]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:14:14) [GET]
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:14:27) [GET]
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-06-08 02:15:20) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-06-08 02:15:35) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "task"=>{"name"=>"Create a new task", "completed"=>"0", "notes"=>"", "priority"=>"4"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO "tasks" ("name", "created_at", "completed", "notes", "updated_at", "priority") VALUES('Create a new task', '2010-06-08 06:15:35', 'f', '', '2010-06-08 06:15:35', 4)[0m
+Redirected to http://localhost:3000/tasks/5
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:15:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:15:37) [GET]
+  [4;35;1mTask Load (0.7ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:15:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/5/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:15:44) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"5", "task"=>{"name"=>"Create a new task", "completed"=>"0", "notes"=>"", "priority"=>"5"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:15:48) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 81ms (View: 11, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:15:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/tasks/5/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:15:56) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"5", "task"=>{"name"=>"Create a new task", "completed"=>"1", "notes"=>"", "priority"=>"4"}}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+  [4;35;1mTask Update (0.3ms)[0m   [0mUPDATE "tasks" SET "updated_at" = '2010-06-08 06:15:56', "completed" = 't' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/tasks/5
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/tasks/5]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:15:56) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:15:57) [GET]
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-06-08 02:16:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/edit
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-06-08 02:16:18) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"u2gZBnPZRHLF/vQmVYV5LTTjIebnEtpsZ97rOxN9Jmc=", "id"=>"1", "task"=>{"name"=>"Demonstrate to-do list app", "completed"=>"1", "notes"=>"", "priority"=>"4"}}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mTask Update (0.3ms)[0m   [0;1mUPDATE "tasks" SET "updated_at" = '2010-06-08 06:16:18', "completed" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/tasks/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-06-08 02:16:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-06-08 02:16:20) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/tasks]
