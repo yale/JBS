@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :tasks
+  
+  map.resources :projects, :collection => { :clear_completed => :delete, :today => :get }
+  map.resources :tasks, :collection =>    { :clear_completed => :delete, :today => :get }
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -10,9 +12,6 @@ ActionController::Routing::Routes.draw do |map|
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-    map.resources :tasks, :collecton => { :clear_completed => :get }
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
@@ -33,7 +32,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "tasks"
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,0 +1,19 @@
+<li<%= ' class="completed"' if project.completed %>>
+  <ul class="tools">
+    <li><%= link_to '&#43;', :controller => 'tasks', :action => 'new', :project_id => project %></li>
+    <li><%= link_to '&#10003;', :action => 'complete', :id => project %></li>
+    <li><%= link_to '&#9998;', edit_project_path(project) %></li>
+    <li><%= link_to '&#10005;', project, :confirm => "Are you sure? If you delete this project, all associated tasks will be deleted as well.", :method => :delete %></li>
+  </ul>
+  <a class="data" href="<%= edit_project_path(project) %>">
+    <span class="name"><%=h project.name %></span>
+    <% if project.due_date -%>
+    <span class="due-date">Due <%=h until_due_date(project) %></span>
+    <% end -%>
+  </a>
+  <% if project.tasks.exists? %>
+    <ul class="asset-list task-list">
+      <%= render :partial => "shared/task", :collection => project.tasks.all %>
+    </ul>
+  <% end %>
+</li>

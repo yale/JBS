@@ -1,4 +1,6 @@
 class Task < ActiveRecord::Base
+  
+  belongs_to :project
 
   validates_presence_of :name, :priority
   validates_numericality_of :priority

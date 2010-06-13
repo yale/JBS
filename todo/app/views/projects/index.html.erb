@@ -1,0 +1,9 @@
+<h1>Projects</h1>
+
+<ul id="inbox-projects" class="asset-list project-list">
+  <%= render :partial => "shared/project", :collection => @projects %>
+</ul>
+
+<ul id="links">
+  <li><%= link_to '+ New', new_project_path %></li>
+</ul>

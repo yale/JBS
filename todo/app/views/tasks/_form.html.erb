@@ -1,0 +1,39 @@
+<% form_for(@task) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="primary">
+    <p class="block">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p class="block">
+      <%= f.label :notes %>
+      <%= f.text_area :notes, :cols => 30, :rows => 6 %>
+    </p>
+    <p>
+      <%= f.label :project_id %>
+      <%= collection_select(:task, :project_id, @projects, :id, :name, {:prompt => false}) %>
+    </p>
+  </div>
+  <div class="secondary">
+    <p>
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </p>
+    <p>
+      <%= f.label :today %>
+      <%= f.check_box :today %>
+    </p>
+    <p class="block">
+      <%= f.label :due_date %>
+      <%= f.date_select :due_date, :order => [:month, :day, :year] %>
+    </p>
+    <p>
+      <%= f.label :priority %>
+      <%= f.select :priority, [4, 3, 2, 1] %>
+    </p>
+  </div>
+  <p class="submit">
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

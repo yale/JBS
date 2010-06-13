@@ -1,0 +1,17 @@
+<li class="priority-<%= task.priority %> <%= " completed" if task.completed %><%= " today" if task.today %>">
+  <ul class="tools">
+    <li><%= link_to '&#9733;', :controller => 'tasks', :action => 'do_today', :id => task %></li>
+    <li><%= link_to '&#10003;', :controller => 'tasks', :action => 'complete', :id => task %></li>
+    <li><%= link_to '&#9998;', edit_task_path(task) %></li>
+    <li><%= link_to '&#10005;', task, :method => :delete %></li>
+  </ul>
+  <a class="data" href="<%= edit_task_path(task) %>">
+    <span class="name"><%=h task.name %></span>
+    <% if task.due_date -%>
+    <span class="due-date">Due <%=h until_due_date(task) %></span>
+    <% end -%>
+    <% if !task.notes.empty? -%>
+    <span class="notes"><%=h task.notes %></span>
+    <% end %>
+  </a>
+</li>

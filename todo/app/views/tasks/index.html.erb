@@ -1,40 +1,10 @@
-<h2>Inbox</h2>
+<h1>Inbox</h1>
 
-<ul id="inbox" class="task-list">
-  <% @inbox.each do |task| %>
-  <li class="priority-<%= task.priority %>">
-    <ul class="task-tools">
-      <li><%= link_to '&#9998;', edit_task_path(task) %></li>
-      <li><%= link_to '&#10003;', :action => 'complete', :id => task %></li>
-      <li><%= link_to '&#10005;', task, :confirm => 'Are you sure?', :method => :delete %></li>
-    </ul>
-    <span class="data">
-      <span class="name"><%=h task.name %></span>
-      <span class="notes"><%=h task.notes %></span>
-      <% if task.due_date -%>
-      <span class="due-date">Due on <%=h task.due_date %></span>
-      <% end -%>
-    </span>
-  </li>
-  <% end %>  
-</ul>
-<ul id="completed-tasks" class="task-list">
-  <% @logbook.each do |task| %>
-  <li>
-    <ul class="task-tools">
-      <li><%= link_to '&#9998;', edit_task_path(task) %></li>
-      <li><%= link_to '&#10005;', task, :confirm => 'Are you sure?', :method => :delete %></li>
-    </ul>
-    <span class="data">
-      <span class="name"><%=h task.name %></span>
-      <span class="notes"><%=h task.notes %></span>
-      <span class="date-completed">Completed on <%=h task.updated_at %></span>
-    </span>
-  </li>
-  <% end %>  
+<ul id="inbox" class="asset-list task-list">
+  <%= render :partial => "shared/task", :collection => @tasks %>
 </ul>
 
 <ul id="links">
-  <li><%= link_to '+ New Task', new_task_path %></li>
-  <li><%= link_to '- Clear Completed', :controller => 'tasks', :action => 'clear_completed' %></li>
+  <li><%= link_to '+ New', new_task_path %></li>
+  <li><%= link_to '- Clear Completed', clear_completed_tasks_path, :method => :delete %></li>
 </ul>

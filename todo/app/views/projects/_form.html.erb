@@ -1,0 +1,19 @@
+<% form_for(@project) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :due_date %>
+    <%= f.date_select :due_date, :order => [:month, :day, :year] %>
+  </p>
+  <p>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
