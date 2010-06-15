@@ -80,12 +80,7 @@ protected
       
       # Set the character that maps to 1
       replacement = (i.odd?) ? "|" : "-"
-      
-      # Now, translate each character
-      line.each do |char|
-        
-      end
-      
+
       # Split the line into bits
       bits = line.split(//)
       

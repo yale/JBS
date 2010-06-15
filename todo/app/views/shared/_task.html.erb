@@ -10,6 +10,7 @@
     <% if task.due_date -%>
     <span class="due-date">Due <%=h until_due_date(task) %></span>
     <% end -%>
+    &nbsp; <!-- raaaaaaaage. todo: implement better clearfix -->
     <% if !task.notes.empty? -%>
     <span class="notes"><%=h task.notes %></span>
     <% end %>

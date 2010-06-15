@@ -12,7 +12,7 @@
     </p>
     <p>
       <%= f.label :project_id %>
-      <%= collection_select(:task, :project_id, @projects, :id, :name, {:prompt => false}) %>
+      <%= collection_select(:task, :project_id, @projects, :id, :name, {:prompt => "Select a project"}) %>
     </p>
   </div>
   <div class="secondary">
@@ -26,7 +26,7 @@
     </p>
     <p class="block">
       <%= f.label :due_date %>
-      <%= f.date_select :due_date, :order => [:month, :day, :year] %>
+      <%= f.date_select :due_date, :order => [:month, :day, :year], :include_blank => true %>
     </p>
     <p>
       <%= f.label :priority %>

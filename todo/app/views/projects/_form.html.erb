@@ -7,7 +7,7 @@
   </p>
   <p>
     <%= f.label :due_date %>
-    <%= f.date_select :due_date, :order => [:month, :day, :year] %>
+    <%= f.date_select :due_date, :order => [:month, :day, :year], :include_blank => true %>
   </p>
   <p>
     <%= f.label :completed %>

@@ -24,6 +24,26 @@ h1 {
   padding: 10px;
 }
 
+#topnav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #65738d;
+  margin: 0;
+  padding: 5px;
+}
+
+#topnav li {
+  list-style: none;
+  display: inline;
+}
+
+#topnav li a {
+  text-transform: uppercase;
+  padding: 3px 5px;
+  color: white;
+}
+
 #sidebar {
   text-align: right;
   padding: 15px 0 0 0;
@@ -39,6 +59,10 @@ h1 {
 
 #sidebar li a {
   color: white;
+}
+
+#sidebar li#nav-today a {
+  color: rgb(249, 250, 210);
 }
 
 #sidebar li.active a {
@@ -102,8 +126,7 @@ ul.asset-list li .notes {
 
 
 ul.asset-list li.today {
-  border: solid 2px yellow;
-  padding: 3px 8px;
+  background: rgba(249, 250, 210, 1);
 }
 
 ul.asset-list li.completed {
