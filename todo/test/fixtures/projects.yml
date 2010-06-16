@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  due_date: 2010-06-12
+  name: A Valid Project
+  due_date: 2010-06-19
   completed: false
 
 two:
-  name: MyString
-  due_date: 2010-06-12
+  name: Another Valid Project
+  due_date: 2010-06-20
   completed: false

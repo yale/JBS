@@ -10,7 +10,7 @@ class Task < ActiveRecord::Base
 protected
 
   def priority_must_be_within_range
-    errors.add(:priority, 'must be between 1 and 4 inclusive') if priority > 4 or priority < 1
+    errors.add(:priority, 'must be between 1 and 4 inclusive') if priority.nil? || (priority > 4 || priority < 1)
   end
 
 end

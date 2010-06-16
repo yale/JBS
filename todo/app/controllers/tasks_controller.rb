@@ -93,7 +93,7 @@ class TasksController < ApplicationController
     
     @task.update_attributes(:completed => !@task.completed)
 
-    @task.project.update_attributes (:completed => false) if !@task.completed and @task.project.completed
+    @task.project.update_attributes(:completed => false) if !@task.completed and @task.project.completed
 
     respond_to do |format|
       format.html { redirect_back_or tasks_url }

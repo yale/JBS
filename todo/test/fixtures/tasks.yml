@@ -1,13 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  notes: MyText
-  priority: 1
+  name: A valid task for today
+  notes: A handful of notes
+  priority: 3
   completed: false
-
+  due_date: 2010-6-29
+  project_id: 
+  today: true
+  
 two:
-  name: MyString
-  notes: MyText
+  name: Another valid task
+  notes:
   priority: 1
   completed: false
+  due_date: 2010-6-29
+  project_id: 
+  today: false
