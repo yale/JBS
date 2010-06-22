@@ -1,0 +1,20 @@
+Homework 12
+Yale Spector
+Mac OS X UI critique
+
+Three things that make Mac OS X easier to use:
+
+  1. The dock. The dock is the first of two user-interface elements that one is presented with, the second being the menu bar. Sitting on the dock are colorful, easily identifiable icons representing the most commonly used applications available on a fresh install. If an icon does not make clear which application it represents, one only has to roll their cursor over the icon to see the title of the application in easy to read text. Furthermore, the dock lets you see which applications are running at a glance.
+  
+  2. Expose. Expose lets you view in an organized grid all of the windows that are currently open. This feature is very useful when working with many windows in one space. If you have many Finder windows open, instead of dragging them all around until you've found the right one, you just need to activate Expose, mouse over each window to expose its title, and click on the one you seek. Since each window is represented as-is, it's easy to recognize the desired window at a glance.
+  
+  3. Command-Tab. One can switch easily between applications by using the keyboard shortcut Cmd-Tab. Hitting Cmd-Tab once will switch to the last application you were using (aside from the current), and hitting it again will switch back. One can hold the Cmd key after hitting tab to reveal the app switcher, which displays the icons of all running applications, ordered from left to right by most recently accessed, to least recently accessed. This gives you an unobtrusive, mouse-free way to navigate between running applications. 
+
+
+Three things that make Mac OS X harder to use:
+
+  1. The menu bar. While the menu bar is in many ways essential, more often than not it obscures common functionality from the user, while relying on decades-old naming conventions. For instance, perhaps the most common functions a user would perform is the opening and saving of documents. To access these functions, one must either know the keyboard shortcuts, or know that those functions are under the File menu. Some applications provide icons built into their user interface for saving and opening documents, but many do not. Applications provide both common and specific functionality through the menu bar, but the functionality is obscured by default.
+  
+  2. Keyboard shortcut symbols. When searching for help, one may find many available documents that refer to certain keyboard shortcuts. The keyboard shortcuts are comprised of any combination of command, option, control, shift, and letters/numbers. However, the command, option, control and shift keys are more often than not referred to by symbols that do not obviously correspond to their intended keys. It is not obvious to a first-time user that ^ refers to the control key, for example. 
+  
+  3. Applications in disk images. Most applications are downloaded in the form of a disk image that, when opened, displays the icon of the application, optionally neighboring an alias of the computer's Applications folder. However, it is all too easy to simply double click on the application once it shows up. After all, if I download ApplicationX, and then see an icon with the word ApplicationX under it, I would certainly be drawn to double click it right then and there, running it right from the disk image. As you know, the intended procedure is to drag the icon into one's Applications folder before using it, but it is not all that clear.
