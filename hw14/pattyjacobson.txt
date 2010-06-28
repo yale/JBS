@@ -1,0 +1,21 @@
+Patty Jacobson
+CIO of Combined Jewish Philanthropies of Greater Boston (CJP)
+
+Patty Jacobson is CJP’s current CIO and is working to build JewishBoston.com, a Web site with the simple goal: making it easy for more people in Greater Boston to participate in Jewish life. Before taking on her role as CIO, Patty was the vice president of marketing at CJP for five years. Prior to her work at CJP, she launched two IT consulting firms, one of which was acquired during the dotcom years. Patty received her bachelor’s degree in East Asian studies from Yale University and her SM/MBA from Massachusetts Institute of Technology - Sloan School of Management.
+
+Good at taking an idea to execution. 20+ years of consulting, system and process design, business development, software development, and technology implementation. Still excited by new ideas and new technology.
+
+Focus on: online and offline communication strategies, viral marketing, fundraising tactics, collaborative applications, social media.
+
+JewishBoston.com
+Purpose: make it easy for people to participate in Jewish life and culture in the Boston area.
+Features:
+  * Event calendar
+  * Resource locator
+  * User populated blog
+  * Personalized weekly events email
+
+Events and resources grouped by category and location, with google map integration. Shows events and resources close to you, based on your provided zipcode.
+
+Development blog: http://jewishboston.typepad.com/
+
